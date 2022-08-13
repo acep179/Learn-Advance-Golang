@@ -3,8 +3,8 @@
 - [Authentication JWT](#authentication-jwt)
   - [Introduction](#introduction)
   - [Installation](#installation)
-  - [Package](#Package)
-  - [Handler](#Handler)
+  - [Package](#package)
+  - [Handler](#handler)
   - [Repository](#repository)
   - [Routes](#routes)
 

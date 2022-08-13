@@ -12,6 +12,21 @@ import (
 	"github.com/go-playground/validator/v10"
 )
 
+<<<<<<< Updated upstream
+=======
+type handlerAuth struct {
+	AuthRepository repositories.AuthRepository
+}
+
+//ctt struct di atas memberitahukan bahwa handler ini akan meneruskan ke repositroy AuthRepository
+
+func HandlerAuth(AuthRepository repositories.AuthRepository) *handlerAuth {
+	return &handlerAuth{AuthRepository}
+}
+
+//ctt untuk Membawa Connection melalui Routes
+
+>>>>>>> Stashed changes
 func (h *handlerAuth) Register(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 
