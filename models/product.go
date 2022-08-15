@@ -19,6 +19,8 @@ type Product struct {
 	//ctt Karena relasi antara Product dan Category adalah many to many. Maka, pada gorm: di atas kita tuliskan gorm: "many2many:product_categories" adapun product_category adalah ForeignKey
 	//ctt Untuk sekarang tetntu saja []Category di atas masih error karena untuk Category-nya memang belum disiapkan
 
+	//ctt Pada CategoryID di bawah dapat dilihat bahwa pada gorm: itu diisikan "-" menjadi gorm:"-" tujuannya adalah agar ketika proses migration dijalankan maka kolom category_id tidak dibuatkan di tabel product mengingat relasinya Category dengan Product adalah many to many sehingga dia akan membuat tabel jembatannya
+
 	CategoryID []int     `json:"category_id" form:"category_id" gorm:"-"`
 	CreatedAt  time.Time `json:"-"`
 	UpdatedAt  time.Time `json:"-"`
