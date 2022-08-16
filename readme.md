@@ -1,6 +1,7 @@
 ### Table of Contents
 
-- [GORM Relation belongs to](#gorm-relation-belongs-to)
+- [GORM Relation Belongs to](#gorm-relation-belongs-to)
+  - [Relation](#relation)
   - [Handlers](#handlers)
   - [Repository](#repository)
   - [Routes](#routes)
@@ -299,7 +300,7 @@ For this section, example Belongs To relation:
   }
   ```
 
-- Inside `routes` folder, create `profile.go` file, and write this below code
+- Inside `routes` folder, create `product.go` file, and write this below code
 
   > File: `routes/product.go`
 
